@@ -21,11 +21,22 @@
 		4892AFAC2B9849EC00E6D3E1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4892AFAB2B9849EC00E6D3E1 /* User.swift */; };
 		4892AFAE2B9849F400E6D3E1 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4892AFAD2B9849F400E6D3E1 /* Post.swift */; };
 		4892AFB12B984B1F00E6D3E1 /* ParseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 4892AFB02B984B1F00E6D3E1 /* ParseSwift */; };
-		4892AFB42B984FE100E6D3E1 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 4892AFB32B984FE100E6D3E1 /* Alamofire */; };
-		4892AFB62B984FE100E6D3E1 /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 4892AFB52B984FE100E6D3E1 /* AlamofireDynamic */; };
 		4892AFB92B98508E00E6D3E1 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = 4892AFB82B98508E00E6D3E1 /* AlamofireImage */; };
 		4892AFBB2B9850C000E6D3E1 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = 4892AFBA2B9850C000E6D3E1 /* AlamofireImage */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		48B9C2D92B9D15C9004000E6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4892AF8A2B983D1D00E6D3E1 /* BeRealClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeRealClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,8 +64,6 @@
 				4892AFB12B984B1F00E6D3E1 /* ParseSwift in Frameworks */,
 				4892AFB92B98508E00E6D3E1 /* AlamofireImage in Frameworks */,
 				4892AFBB2B9850C000E6D3E1 /* AlamofireImage in Frameworks */,
-				4892AFB62B984FE100E6D3E1 /* AlamofireDynamic in Frameworks */,
-				4892AFB42B984FE100E6D3E1 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,16 +117,18 @@
 				4892AF862B983D1D00E6D3E1 /* Sources */,
 				4892AF872B983D1D00E6D3E1 /* Frameworks */,
 				4892AF882B983D1D00E6D3E1 /* Resources */,
+				48B9C2D92B9D15C9004000E6 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				48B9C2D72B9D1554004000E6 /* PBXTargetDependency */,
+				48B9C2D52B9D1550004000E6 /* PBXTargetDependency */,
+				48B9C2D32B9D1549004000E6 /* PBXTargetDependency */,
 			);
 			name = BeRealClone;
 			packageProductDependencies = (
 				4892AFB02B984B1F00E6D3E1 /* ParseSwift */,
-				4892AFB32B984FE100E6D3E1 /* Alamofire */,
-				4892AFB52B984FE100E6D3E1 /* AlamofireDynamic */,
 				4892AFB82B98508E00E6D3E1 /* AlamofireImage */,
 				4892AFBA2B9850C000E6D3E1 /* AlamofireImage */,
 			);
@@ -195,6 +206,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		48B9C2D32B9D1549004000E6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 48B9C2D22B9D1549004000E6 /* ParseSwift */;
+		};
+		48B9C2D52B9D1550004000E6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 48B9C2D42B9D1550004000E6 /* Alamofire */;
+		};
+		48B9C2D72B9D1554004000E6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 48B9C2D62B9D1554004000E6 /* AlamofireImage */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		4892AF932B983D1D00E6D3E1 /* Main.storyboard */ = {
@@ -447,22 +473,27 @@
 			package = 4892AFAF2B984B1F00E6D3E1 /* XCRemoteSwiftPackageReference "Parse-Swift" */;
 			productName = ParseSwift;
 		};
-		4892AFB32B984FE100E6D3E1 /* Alamofire */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 4892AFB22B984FE100E6D3E1 /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = Alamofire;
-		};
-		4892AFB52B984FE100E6D3E1 /* AlamofireDynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 4892AFB22B984FE100E6D3E1 /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = AlamofireDynamic;
-		};
 		4892AFB82B98508E00E6D3E1 /* AlamofireImage */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 4892AFB72B98508E00E6D3E1 /* XCRemoteSwiftPackageReference "AlamofireImage" */;
 			productName = AlamofireImage;
 		};
 		4892AFBA2B9850C000E6D3E1 /* AlamofireImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4892AFB72B98508E00E6D3E1 /* XCRemoteSwiftPackageReference "AlamofireImage" */;
+			productName = AlamofireImage;
+		};
+		48B9C2D22B9D1549004000E6 /* ParseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4892AFAF2B984B1F00E6D3E1 /* XCRemoteSwiftPackageReference "Parse-Swift" */;
+			productName = ParseSwift;
+		};
+		48B9C2D42B9D1550004000E6 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4892AFB22B984FE100E6D3E1 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		48B9C2D62B9D1554004000E6 /* AlamofireImage */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 4892AFB72B98508E00E6D3E1 /* XCRemoteSwiftPackageReference "AlamofireImage" */;
 			productName = AlamofireImage;
